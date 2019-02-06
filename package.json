@@ -3,17 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "setTimeout": 10000
+  },
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
   "devDependencies": {
+    "babel-jest": "^24.1.0",
     "chai": "^4.2.0",
-    "chai-http": "^4.2.1",
-    "jest": "^24.1.0"
+    "dotenv": "^6.2.0",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
